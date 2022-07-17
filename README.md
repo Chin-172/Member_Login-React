@@ -7,8 +7,6 @@ For SignUp function, data will return back and updating to the server. You can c
 
 ### Page Overview 📋
 
-![image](https://user-images.githubusercontent.com/63136573/179380296-3e40759f-e1e5-46a2-a51f-d779a87af2f6.png)
-![image](https://user-images.githubusercontent.com/63136573/179380312-9ac1225e-86b8-4295-815d-e15f942f7731.png)
 
 
 ### Preparation 💿
@@ -55,3 +53,4 @@ Start the json-server and setting port as 4000
 |---              |---                                           |
 |   15 July 2022  |                   UI Design                  |
 |   16 July 2022  |   Fetching Data and Pushing Data to server   |
+|   17 July 2022  |   Done the SignIn Page Functions and optimistic the functions of FetchData() and PostData()  |
