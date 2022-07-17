@@ -16,13 +16,37 @@ Before run the program, make sure you have already installed:
 - [json-server](https://www.npmjs.com/package/json-server)
 - [npm](https://nodejs.org/en/download/)
 
+### Run Program 🕹️
+
+Open Terminal, direct to the `app` directory
+
+```Shell
+  cd app/
+```
+
+Then, start the program with using
+``` Shell
+  npm start
+```
+
+Open new Terminal, direct to the server directory
+```Shell
+  cd backend/server/
+```
+
+Start the json-server and setting port as 4000
+```Shell
+  json-server --watch db.json --port 4000
+```
+
+**NOTE** If 4000 port is used in your PC, please change the constant variable `${API_PORT}` in `app/src/global/constants.js`. After that, please input your port in the command line instead of 4000.
 
 ### json-server basic commands 📌
-|                  commands               |                           actions                       |
-|---                                      |---                                                      |
-|         npm install -g json-server      |                    Install json-server                  |
-|             json-server db.json         |         Start json-server in default port 3000          |
-| json-server --watch db.json --port 3004 | Start json-server in port 3004 and moniting the db.json |
+|                    commands                |                              actions                        |
+|---                                         |---                                                          |
+|           npm install -g json-server       |                      Install json-server                    |
+|             json-server db.json            |           Start json-server in default port 3000            |
+| json-server --watch db.json --port ${port} | Start json-server in specific port and moniting the db.json |
 
 
 ### Logs 📆
