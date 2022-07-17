@@ -7,7 +7,7 @@ For SignUp function, data will return back and updating to the server. You can c
 
 ### Page Overview 📋
 
-
+![](demo.gif)
 
 ### Preparation 💿
 Before run the program, make sure you have already installed:
