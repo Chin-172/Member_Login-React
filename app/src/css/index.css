@@ -27,6 +27,20 @@ code {
   background-color: #7EA69A;
 }
 
+.Home > button{
+  border: none;
+  background-color: #fff;
+  color: #7EA69A;
+  padding: 3vh 5vw;
+  border-radius: 30vw;
+  font-size: 5vw;
+  margin-top: 42vh;
+  margin-left: 38vw;
+}
+
+.Home > button:hover{
+  cursor: pointer;
+}
 /* SignIn Page */
 .SignInPage{
   width: 55%;
@@ -143,4 +157,12 @@ code {
 .Footer > button:hover{
   cursor: pointer;
   color: #397A67;
+}
+
+/* Alert */
+.alert{
+  font-size: 2vh;
+  position: fixed;
+  top: 22vh;
+  padding: 0 4.5%;
 }

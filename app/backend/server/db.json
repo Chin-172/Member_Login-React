@@ -1,23 +1,12 @@
 {
   "users": [
     {
-      "data": {
-        "first name": "Tai Men",
-        "last name": "Chan",
-        "email": "test@email.com",
-        "password": "123456",
-        "phone number": "22222222"
-      },
-      "id": "0"
-    },
-    [
-      {
-        "first name": "a",
-        "last name": "a",
-        "email": "a",
-        "password": "a",
-        "phone number": ""
-      }
-    ]
+      "first name": "t",
+      "last name": "est",
+      "email": "test@email.com",
+      "password": "123123",
+      "phone number": "",
+      "id": 1
+    }
   ]
 }

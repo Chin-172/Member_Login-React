@@ -2,9 +2,9 @@ import { useEffect,useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-import Home from "./component/Home";
-import SignIn from "./component/SignIn";
-import SignUp from "./component/SignUp";
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 
 import { API_GET_DATA } from './global/constants';
 
@@ -20,6 +20,7 @@ function App() {
     const res = await fetch(API_GET_DATA);
     const obtain =  await res.json();
     setData(obtain);
+    console.log('Fetching Data: ',data);
   }
 
   async function postData(){
@@ -35,6 +36,7 @@ function App() {
     )
 
     console.log("Data Pushed!");
+    fetchData();  
   }
 
   // Fetching Data
@@ -45,14 +47,11 @@ function App() {
 
   // Posting and Moniting the data state
   useEffect( () => {
-    // if(!initState && initState !== undefined && data !== null && data !== undefined){
-    //   postData();
-    //   console.log("Data Changed");
-    //   console.log(initState);
-    // }
-
+    
     if(pushData !== null && pushData !== undefined)
       postData();
+
+      
   },[pushData])
   
   return (
@@ -61,7 +60,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}/>
-          <Route exact path="/signIn" element={<SignIn />} />
+          <Route exact path="/signIn" element={<SignIn data={data} />} />
           <Route exact path="/signUp" element={<SignUp setData={setPushData} />} />
 
         </Routes>
